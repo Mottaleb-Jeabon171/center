@@ -85,7 +85,7 @@
 			</div>
 		</div>
 		<div class="main_bar">
-			<?php
+			 <?php
 				$ph_id = $_SESSION['project_name_id'];
 				$query = "SELECT * FROM project_heading WHERE id = $ph_id";
 				$show = $db->select($query);
@@ -100,7 +100,7 @@
 		  		<?php 
 					}
 				} 
-		  	?>
+		  	?> 
 		  	<div class="project_heading text-center" >      
 		    	<h2 class="text-center" style="font-size: 23px; line-height: 22px;">ডিলার হিসাব রিপোর্ট</h2>
 		    </div>
@@ -201,22 +201,22 @@
     						echo "<td colspan='5' style='border: 1px solid #777 !important; text-align: center; font-size: 28px; background-color: #ddd;'>".$row['dealer_name']."</td>";
 							echo "</tr>";
 
-    						echo "<tr>";
-			    			echo "<th style='border: 1px solid #777 !important;'>".$i."</th>";
-			    			echo "<th style='border: 1px solid #777 !important;'>ডিলার আই.ডি</th>";
+    					 echo "<tr>";
+			    		    echo "<th style='border: 1px solid #777 !important;'>".$i."</th>";
+			    		    echo "<th style='border: 1px solid #777 !important;'>ডিলার আই.ডি</th>";
 			    			echo "<th style='border: 1px solid #777 !important;'>ঠিকানা</th>";
-			    			echo "<th style='border: 1px solid #777 !important;'>যোগাযোগ ব্যাক্তির নাম</th>";
+			    		    echo "<th style='border: 1px solid #777 !important;'>যোগাযোগ ব্যাক্তির নাম</th>";
 			    			echo "<th style='border: 1px solid #777 !important;'>মোবাইল</th>";
-			    			echo "</tr>";
+			    			 echo "</tr>";
 
 
-    						echo "<tr>";
-    						echo "<td style='border: 1px solid #777 !important;'></td>";
-    						echo "<td style='border: 1px solid #777 !important;'>".$dealer_id."</td>";	    						
-    						echo "<td style='border: 1px solid #777 !important;'>".$row['address']."</td>";
-    						echo "<td style='border: 1px solid #777 !important;'>".$row['contact_person_name']."</td>";
-    						echo "<td style='border: 1px solid #777 !important;'>".$row['mobile']."</td>";
-    						echo "</tr>";
+    					     echo "<tr>";
+    						 echo "<td style='border: 1px solid #777 !important;'></td>";
+    						 echo "<td style='border: 1px solid #777 !important;'>".$dealer_id."</td>";	    						
+    						 echo "<td style='border: 1px solid #777 !important;'>".$row['address']."</td>";
+    						 echo "<td style='border: 1px solid #777 !important;'>".$row['contact_person_name']."</td>";
+    						 echo "<td style='border: 1px solid #777 !important;'>".$row['mobile']."</td>";
+    						 echo "</tr>";
     						
     						
 
